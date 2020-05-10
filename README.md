@@ -9,7 +9,7 @@
 | Prometheus | 9090 |
 | InfluxDB   | 8086 |
 
-![docker-service-url](img/data/png)
+![docker-service-url](https://github.com/msterhuj/grafana-docker-compose/blob/master/img/data.png)
 
 ## Install plugin in Grafana
 Run script in scripts folders and give the plugin name
