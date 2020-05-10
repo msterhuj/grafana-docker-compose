@@ -1,0 +1,30 @@
+version: "3.3"
+
+services:
+
+  prometheus:
+    image: "prom/prometheus"
+    container_name: "prometheus"
+    user: "0"
+    ports:
+      - "9090:9090"
+    volumes:
+      - "./data/prometheus/data:/prometheus"
+      - "./data/prometheus/prometheus.yml:/etc/prometheus/prometheus.yml"
+
+  influxdb:
+    image: "influxdb"
+    container_name: "influxdb"
+    ports:
+      - "8086:8086"
+    volumes:
+      - "./data/influxdb:/var/lib/influxdb"
+
+  grafana:
+    image: "grafana/grafana"
+    container_name: "grafana"
+    user: "0"
+    ports:
+      - "3000:3000"
+    volumes:
+      - "./data/grafana:/var/lib/grafana"
