@@ -8,6 +8,7 @@
 | Grafana    | 3000 |
 | Prometheus | 9090 |
 | InfluxDB   | 8086 |
+| Chronograf | 8888 |
 
 ![docker-service-url](https://github.com/msterhuj/grafana-docker-compose/blob/master/img/data.png)
 
