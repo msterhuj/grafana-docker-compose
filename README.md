@@ -1,5 +1,7 @@
 # Docker-compose for Grafana with Prometheus & Influxdb
 
+> OLD new depo aviable [here](https://github.com/msterhuj/influxdata-monitoring)
+
 * All data are saved on ./data in the same folder than docker-compose.yml
 * Grafana defaults creds is `admin/admin`
 
